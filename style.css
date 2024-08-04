@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: url(pics/cosmic-space-stars-color-cosmic-abstract-background-science-fiction-wallpaper\ \(1\).jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+h2{
+    font-size: 2.7rem;
+    font-weight: 300;
+    color:#fff;
+    margin-bottom: 25px;
+    text-align: center;
+}
+.contact form{
+    width: 600px;
+    text-align: center;
+}
+form .input-box{
+    display: flex;
+    justify-content: space-between;
+
+}
+.field .item{
+    width: 100%;
+    padding: 18px;
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.11);
+    border-radius: 20px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(3.7px);
+    -webkit-backdrop-filter: blur(3.7px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 6px;
+    font-size: 16px;
+    color: #fff;
+    margin: 12px 0;
+}
+.field .item::placeholder{
+    color: whitesmoke;
+    opacity: 0.7;
+}
+.input-box .input-field{
+    width: 48%;
+}
+.contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+button{
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 1rem;
+    border: none;
+    cursor: pointer;
+    background-image: linear-gradient(to right, #E55D87 0%, #5FC3E4  51%, #E55D87  100%);
+    color: #fff;
+    display: block;
+    background-size: 200% auto;
+    transition: 0.5s;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+button:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}.input-field input:focus,
+.textarea-field textarea:focus {
+    outline: none;
+    /* Add any other styling you want when the input is focused */
+}
+
+
+.error-txt{
+    font-size: 14.5px;
+    color: #fd1717;
+    text-align: left;
+    margin: -5px 0 10px;
+    margin-top: -10px;
+    display: none;
+}
+ 
+.field.error .item{
+    border-color: #fd1717;
+}
+.field.error .error-txt{
+    display: flex;
+}
+
+@media (max-width: 430px) {
+
+    h2{
+        font-size: 2.3rem;        color:#fff;
+        margin-bottom: 20px;
+    }
+
+    .contact form{
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    .field .item{
+        width: 100%;
+        padding: 15px;
+        font-size: 14px;
+        color: #fff;
+        margin: 12px 0;
+    }
+    button{
+        padding: 8px 12px;
+        font-size: 14px;
+        border-radius: 1rem;
+    }
+
+}
